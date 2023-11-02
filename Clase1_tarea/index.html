@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguro No Pagamos Cooperativa</title>
+  <link rel="stylesheet" href="./styles.css">
+  
+</head>
+<body>
+  
+  <header>
+    <h1>SNPC</h1>
+    <nav>
+      <a href="#hero">Inicio</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <div>
+      <h1>Seguro No Pagamos Cooperativa</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At qui pariatur temporibus accusamus, illo cumque ratione? Voluptate, labore. Itaque ea similique quo repellendus deleniti sapiente impedit, maiores illo sit saepe?</p>
+    </div>
+    
+  </section>
+
+  <section class="contacto" id="contacto">
+    <form id="form-contacto" novalidate>
+      <h2>Envíenos su consulta</h2>
+      <div class="form-input">
+        <label for="nombre">Nombre </label>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre">
+      </div>
+      <div class="form-input">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" placeholder="Ingrese su apellido">
+      </div>
+      <div class="form-input">
+        <label for="dni">DNI <small>(sin espacios ni puntos)</small></label>
+        <input type="number" id="dni" placeholder="Ingrese su DNI">
+      </div>
+      <div class="form-input">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Ingrese su email">
+      </div>
+      <div class="form-input">
+        <label for="tel">Telefono</label>
+        <input type="tel" id="tel" placeholder="ingrese su teléfono">
+      </div>
+      <div class="form-input">
+        <label for="tipoSeguro">Tipo de Seguro</label>
+        <select id="tipoSeguro">
+          <option value="basico">Básico</option>
+          <option value="intermedio">Intermedio</option>
+          <option value="premium">Premium</option>
+        </select>
+      </div>
+      <div class="precio-seguro" id="precioSeguro">
+        Precio del seguro básico: $500
+      </div>
+      <button type="submit" id="btnEnviar">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    Copyright by SNPC <span id="year"></span> &COPY
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

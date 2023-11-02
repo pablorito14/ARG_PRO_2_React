@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+
+:root{
+  /* --section-margin-top: 10vh; */
+  --color-texto-primario: #f6f6f6;
+  --color-texto-secundario: #d7d7d7
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* HEADER */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color:whitesmoke;
+}
+
+nav{
+  display: flex;
+  gap: 5vh;
+}
+
+nav h1{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+nav a{
+  color: rgb(86, 86, 86);
+  text-decoration: none;
+  font-weight: 600;
+  transition: .5s ease-in-out;
+}
+
+nav a:hover{
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  color:black;
+}
+/* HEADER */
+
+/* HERO */
+.hero{
+  display: flex;
+  height: 80vh; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)) ,url('./img/hero.jpg');
+  
+  background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+  
+}
+
+.hero div{
+  width: 100%;
+  max-width: 990px;
+  text-align: center;
+  margin: auto;
+}
+
+.hero h1{
+  font-size: 3rem;
+  margin-bottom: .5rem;
+  color: var(--color-texto-primario);
+}
+
+.hero p{
+  font-size: 1.125rem;
+  color: var(--color-texto-secundario);
+}
+
+/* HERO */
+
+/* CONTACTO */
+.contacto{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)) ,url('./img/contacto.webp');
+  
+  background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+  color: whitesmoke;
+
+}
+
+form{
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.contacto h2{
+  text-align: center;
+  font-size: 2.25rem;
+  color: var(--color-texto-primario);
+}
+
+.form-input{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+label{
+  color: var(--color-texto-secundario);
+  font-weight: 600;
+  margin-bottom: .25rem;
+}
+
+input,select{
+  border-radius: 5px;
+  padding: .5rem;
+}
+
+input:focus-visible,
+select:focus-visible{
+  outline:none
+}
+
+.invalid{
+  border: 2px solid #ff000094;
+
+}
+
+.invalid::placeholder{
+  color: #ff000094;
+  font-weight: 700;
+}
+
+.precio-seguro{
+  background-color: whitesmoke;
+  color: black;
+  padding: .5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+button{
+  padding: .5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #0b720b;
+  color: whitesmoke;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-disabled{
+  background-color: #064306;
+  color: gray;
+}
+
+
+/* CONTACTO */
+
+/* FOOTER */
+footer{
+  background-color:whitesmoke;
+  display: flex;
+  justify-content: center;
+  padding: .5rem 0;
+}
+/* FOOTER */
