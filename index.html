@@ -63,7 +63,20 @@
       background-color: whitesmoke;
       width: 100%;
       bottom: 0;
-      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 5px 0;
+      /* text-align: center; */
+    }
+
+    footer div:nth-child(2){
+      /* position: relative; */
+      width: 60px;
+    }
+
+    footer div:nth-child(2) img{
+      width: 100%;
     }
   </style>
 </head>
@@ -81,7 +94,12 @@
 
   </section>
   <footer>
-    Pablo Rito - 2023
+    <div>
+      Pablo Rito - 2023
+    </div>
+    <div>
+      <a href="https://github.com/pablorito14/ARG_PRO_2_React" target="_blank"><img src="./git_.png" alt=""></a>
+    </div>
   </footer>
 </body>
 </html>
