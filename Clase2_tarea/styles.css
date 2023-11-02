@@ -26,9 +26,11 @@ header{
 .contenedor{
   width: 100%;
   max-width: 990px;
+
 } 
 
 .contenedor form{
+  padding: 0 10px;
   width: 100%;
   max-width: 450px;
   display: flex;
@@ -79,6 +81,8 @@ input{
 }
 
 button{
+  background-color: whitesmoke;
+  color: black;
   width: calc((100% / 4) );
 }
 
@@ -86,12 +90,12 @@ button:hover{
   cursor: pointer;
   background-color: black;
   color: whitesmoke;
-  transition: all .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
-button:not(:hover){
-  transition: all .5s ease-in-out;
-}
+/* button:not(:hover){
+  transition: .5s ease-in-out;
+} */
 
 .invalid{
   border: 2px solid rgb(212, 53, 53)
