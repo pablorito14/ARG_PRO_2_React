@@ -9,17 +9,23 @@
       padding: 0;
       margin: 0;
       box-sizing: border-box;
-      font-size: 32px;
+      font-size: 28px;
       font-family: sans-serif;
     }
 
     .hero{
+      display: flex;
+      align-items: center;
       height: 100vh;
       background-color: cadetblue;
+    }
+    .hero div{
       display: flex;
+      flex-flow: wrap;
       justify-content: center;
       align-items: center;
-      gap: 10vh;
+      gap: 10px;
+      margin: auto;
     }
 
     .hero a{
@@ -29,6 +35,7 @@
       border: 2px solid aliceblue;
       border-radius: 10px;
       transition: .75s ease-in-out;
+      /* width: 100%; */
     }
 
     .hero a:hover{
@@ -41,8 +48,10 @@
 </head>
 <body>
   <section class="hero">
-    <a href="./Clase1_tarea/">Tarea Clase 1</a>  
-    <a href="./Clase2_tarea/">Tarea Clase 2</a>  
+    <div>
+      <a href="./Clase1_tarea/">Tarea Clase 1</a>  
+      <a href="./Clase2_tarea/">Tarea Clase 2</a>  
+    </div>
   </section>
   
 </body>
